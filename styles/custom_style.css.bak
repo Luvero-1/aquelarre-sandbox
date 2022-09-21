@@ -1,0 +1,168 @@
+/* ¡Inicialización de familias de fuentes! Añade más aquí antes de usar */
+/* Copie todo el párrafo y péguelo abajo, luego cambie el nombre y la url */
+/* Por último, utilice el nombre en font-family en el resto de la página de estilo */
+
+@font-face {
+  font-family: MedievalSharp, MedievalSharp-Regular;
+  src:url(fonts/MedievalSharp-Regular.otf);
+}
+@font-face {
+  font-family: MedievalSharp, MedievalSharp-Regular;
+  src:url(fonts/MedievalSharp-Regular.otf);
+}
+@font-face {
+  font-family: MedievalSharp, MedievalSharp-Regular;
+  src:url(fonts/MedievalSharp-Regular.otf);
+}
+@font-face {
+  font-family: MedievalSharp, MedievalSharp-Regular;
+  src:url(fonts/MedievalSharp-Regular.otf);
+}
+
+/* ------------------------------ */
+
+/* ------ !!!! ------- */
+/* NO QUITES EL ; PUNTO Y COMA AL FINAL DE CADA LINEA!!! */
+/* ------ !!!! ------- */
+
+
+.roll-result, .roll-conditional {
+  height: auto;
+}
+.roll-result {
+  height: auto;
+}
+.roll-detail{
+    width:100%;
+    height:auto;
+}
+
+/* El logotipo de FoundryVTT */
+#logo {
+    box-sizing: border-box;
+    display: block;  
+    height: 60px; /*Alto de la imagen nueva, ¡cambia sólo el número! */
+    width: 60px; /*Ancho de la imagen nueva, ¡cambia sólo el número! */
+    padding-left: 60px;
+    background: url(img/aquelarre_logo.png);
+    background-size: cover;
+    margin-left: 20px;
+}
+
+/* Texto de la Bio */
+.sandbox.sheet .sheet-body .tab {
+    height:100%;
+    padding: 0px 5px;
+    font-family: MedievalSharp, MedievalSharp-Regular;
+    font-size: 100%;
+    color: #561010;
+    
+}
+
+/* Fondo de la hoja de personaje y color de la fuente */
+.sandbox.sheet .window-content {
+  color: #961d1d; /* Cambia el código de color, incluido el hashtag! */
+  /* Sustituye el LINK_TO_IMAGE de la web por una imagen que te guste como fondo o colócala en la carpeta img */
+  /* La imagen debe tener un tamaño de unos 720p y no ser demasiado pesada */
+  background: url(img/pergamino.jpg) no-repeat; /* Sustituir "no-repeat" por "repeat" para las imágenes de patrones */
+  overflow-y: auto; /* cambiar entre hidden y auto para mostrar la barra de desplazamiento vertical en las hojas. Bueno para hojas largas */
+}
+
+/* Control del texto general en Foundry en general */
+body {
+  font-family: MedievalSharp, MedievalSharp-Regular; /* ¡¡¡No quites los dos puntos del final!!! */
+  font-size: 14px; /* ¡cambia sólo el número! */
+}
+
+/* Pestañas en las hojas! */
+.sandbox.sheet .tabs .item {
+  font-family: MedievalSharp, MedievalSharp-Regular;
+  font-weight: bold; /* Probar bold - bolder - normal - lighter */
+}
+
+/* Control de la fuente y el color de las cabeceras de los paneles */
+.sandbox.sheet .panelheader {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 14px; /* ¡cambia sólo el número! */
+  background-color: #7b6e51; /* Color de fondo de la cabecera del panel */
+}
+
+/* Campos de color de fondo del texto de entrada de la hoja de caracteres */
+.sandbox.sheet [class^="flexblock-"] input {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 12px; 
+  background-color: #c3b9a2;
+}
+
+/* Texto de entrada de la hoja de caracteres en las tablas (artículos) */
+/* Puedes eliminar este párrafo si quieres que sea igual que el texto de entrada anterior */
+.sandbox.sheet [class^="flexblock-"] td input {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 10px;
+  background-color: #c3b9a2;
+}
+
+/* ¡¡¡Cómo se comportan los cItems de las tablas al pasar el ratón por encima!!! */
+.sandbox.sheet .linkable:hover {
+    color: #6f1311;
+	font-family: MedievalSharp, sans-serif; /* No es buena idea cambiar las fuentes al pasar el ratón pero... */
+	font-size: 14px; /* ¿Aumentar o reducir el tamaño al pasar el ratón por encima? */
+    font-weight: bold;
+}
+
+/* Fuentes y estilo de las etiquetas */
+.sandbox.sheet [class*="label-"] {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 13px;
+}
+
+/* Colores de la cabecera de la tabla de la hoja de caracteres */
+.sandbox.sheet thead {
+  background-color: #a0906ede;
+}
+
+/* Colores de las celdas de la tabla vacía de la hoja de caracteres */
+.sandbox.sheet tr.empty-row {
+  background-color: #c3b9a2;
+}
+
+/* Color de fondo del cuerpo de la tabla */
+tbody.table {
+  background-color: #ff0000;
+}
+
+/* Fuentes de las celdas de la tabla */
+.sandbox.sheet td {
+  font-family: MedievalSharp, sans-serif;
+  font-size: 14px;
+}
+
+/* ¡Cambiar los colores de las sombras y el color de la fuente general de Foundry! */
+.app {
+  box-shadow: 0 0 20px #7e4444; /* ¡Cambia el código de color aquí para obtener un bonito color de sombra! */
+  color: #dfdfdf; /* Color del texto de los títulos de las ventanas y del menú en todo Foundry */
+}
+
+/* Títulos de personajes y nombres de artículos Estilo de texto */
+.sandbox.sheet .charname input {
+    color: #191813;
+    font-family: MedievalSharp, MedievalSharp-Regular;
+    font-size: 30px;
+    font-style: normal;
+}
+
+/* ¡Personaliza la zona del tiradas del chat! */
+#chat-form textarea {
+  background: url(img/pergamino.jpg) repeat; /* Reemplazar con alguna url con imagen o url en la carpeta img */
+  font-family: MedievalSharp, MedievalSharp-Regular; /* Fuente del texto en los dados */
+  font-size: 14px; /* Tamaño del texto en el diálogo de los dados */
+  color: #191813; /* Color del texto en el diálogo de los dados */
+}
+
+/* ¡Personaliza el área del historial del chat! */
+#chat-log .message {
+  background: url(img/pergamino.jpg) repeat; /* Reemplazar con alguna url con imagen o url en la carpeta img y Sustituir "no-repeat" por "repeat" para las imágenes de patrones */
+  font-family: MedievalSharp, MedievalSharp-Regular; /* Fuente del texto en los dados */
+  font-size: 21px; /* Tamaño del texto en el diálogo de los dados */
+  color: #191813; /* Color del texto */
+}

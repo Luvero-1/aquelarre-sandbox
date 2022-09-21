@@ -1,0 +1,33 @@
+{
+  "name": "aquelarre-sandbox",
+  "title": "Aquelarre 3ºed Sandbox",
+  "description": "",
+  "author": "Luvero",
+  "authors": [
+    {
+      "name": "Luvero",
+      "discord": "Luvero#5745"
+    }
+  ],
+  "url": "https://github.com/Luvero-1/aquelarre-sandbox",
+  "flags": {},
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.9.0",
+  "compatibleCoreVersion": "0.9.249",
+  "scripts": [],
+  "esmodules": [],
+  "styles": [],
+  "languages": [],
+  "packs": [],
+  "system": "sandbox",
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/Luvero-1/aquelarre-sandbox/main/world.json",
+  "download": "https://codeload.github.com/Luvero-1/aquelarre-sandbox/zip/main",
+  "protected": false,
+  "background": "worlds/aquelarre-sandbox/2%20Im%C3%A1genes/Fondo%20Aquelarre.jpg",
+  "coreVersion": "9.269",
+  "resetKeys": false,
+  "safeMode": false,
+  "systemVersion": "0.13.5"
+}
